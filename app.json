@@ -21,10 +21,25 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.tech_goapi.boonggadminapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9fa55cb8-2f55-4201-ab9b-20789f2fe07b"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/9fa55cb8-2f55-4201-ab9b-20789f2fe07b"
+    },
+    "plugins": [
+      "expo-localization"
+    ]
   }
 }

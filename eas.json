@@ -1,0 +1,38 @@
+{
+  "cli": {
+    "version": ">= 3.4.1"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m1-medium"
+      },
+      "channel": "development"
+    },
+    "dev": {
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m1-medium"
+      },
+      "channel": "dev"
+    },
+    "prod": {
+      "distribution": "internal",
+      "ios": {
+        "resourceClass": "m1-medium"
+      },
+      "channel": "prod"
+    },
+    "production": {
+      "ios": {
+        "resourceClass": "m1-medium"
+      },
+      "channel": "production"
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
