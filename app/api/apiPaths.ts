@@ -43,8 +43,8 @@ export const apiPaths = {
   },
   prod: {
     // url: 'https://b894-2405-201-a410-ca50-4c28-ab70-4951-c5ae.ngrok-free.app' //ngrok
-    url: 'http://dev-api.boongg.com:3100' //dev
-    // url: 'https://api.boongg.com'  // prod
+    // url: 'http://dev-api.boongg.com:3100' //dev
+    url: 'https://api.boongg.com'  // prod
     // url: 'http://192.168.29.36:3100'  // i
   }
 };

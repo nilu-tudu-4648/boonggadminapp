@@ -11,7 +11,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { loadOngoingBookings } from '@/store/ongoingBooking';
 import { cleanonGoingbooking, getrentbookingListBooked, userTokensaveToReducers } from '@/store/createBooking';
 import { loadAllBikesListMaintenance, loadAllRentPool } from '@/store/rentPool';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useAppSelector } from '@/hooks/useAppSelector';
 import { RootState } from '@/types/RootStateType';
 import useDialog from '@/hooks/useDialog';
@@ -55,7 +54,6 @@ const items = [
     value: 3,
     image: require("@/assets/cancel_b.png"),
     route: 'work in progress',
-    // route: routes.CURRENT_BOOKING.route,
     screen: 'History',
     text: "Cancelled Booking"
   },
@@ -164,7 +162,6 @@ const DashboardScreen: React.FC<DashboardScreenProps> = ({ navigation }) => {
   const [logoutvisible, setlogoutvisible] = React.useState(false);
   const { loading } = useAppSelector((state: RootState) => state.entities.rentPool);
   const { storeDetail } = useAppSelector((state: RootState) => state.entities.searchBikes);
-  const insets = useSafeAreaInsets();
   const [userfirst, setuserfirst] = useState(null)
   const getFirstuser = async () => {
     try {
@@ -202,16 +199,9 @@ const DashboardScreen: React.FC<DashboardScreenProps> = ({ navigation }) => {
       console.log(e)
     }
   }
-  // BackHandler.addEventListener('hardwareBackPress', () => {
-  //   if(routes.name==='Dashboard'){
-  //     showDialog()
-  //   }
-  //   return()=> true
-  // }, [])
   const SLIDER_WIDTH = Dimensions.get("window").width - 35;
   const SCREEN_WIDTH = Dimensions.get("window").width;
-  const ITEM_WIDTH = SLIDER_WIDTH;
-
+  
   // Use Hooks to control!
   const {
     canStart, // a boolean indicate if you can start tour guide
@@ -334,7 +324,7 @@ const DashboardScreen: React.FC<DashboardScreenProps> = ({ navigation }) => {
           <Carousel
             loop
             width={SLIDER_WIDTH}
-            height={SLIDER_WIDTH / 2.6}
+            height={SLIDER_WIDTH / 3}
             data={data}
             scrollAnimationDuration={1000}
             renderItem={({ item }) => item.component}

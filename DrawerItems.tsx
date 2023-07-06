@@ -116,7 +116,7 @@ const DrawerItems: React.FC<DrawerItemsProps> = ({ navigation }: any) => {
               console.log(e)
             }
           }} title={i18n.t('Logout')} style={[tw`w-1.5/2 items-center p-2`, { elevation: 1.5 }]} />
-          <AppText style={[tw`font-bold`, { color: colors.purple, fontSize: 10 }]}>1.0.16</AppText>
+          <AppText style={[tw`font-bold`, { color: colors.purple, fontSize: 10 }]}>1.0.41</AppText>
         </View>
       </Drawer.Section>
       <AppText style={[tw`font-bold self-center `, { fontSize: 11, color: colors.purple }]}>

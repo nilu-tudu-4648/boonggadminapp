@@ -80,10 +80,10 @@ const LoginScreen: React.FC = ({ navigation }: any) => {
   // boonggstorehyderabad@boongg.com	
   // boongg111
   const initialValues: FormValues = {
-    email: "wagholimotors@boongg.com", //excelbikes@boongg.com"wagholimotors@boongg.com"
-    password: "password", //wagholi001
-    // email: "",
-    // password: "",
+    // email: "wagholimotors@boongg.com", //excelbikes@boongg.com"wagholimotors@boongg.com"
+    // password: "password", //wagholi001
+    email: "",
+    password: "",
   };
 
   return (
