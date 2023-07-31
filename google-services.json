@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "976340796080",
+    "project_id": "boongg-c5389",
+    "storage_bucket": "boongg-c5389.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976340796080:android:f8cfe17572a215c8713175",
+        "android_client_info": {
+          "package_name": "com.tech_goapi.boonggadminapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976340796080-5jsblrk7coj5cpmbosa06b3keiulsf43.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH3KPuIpFuWk846Vgl-6gmg6PEKWxXz38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976340796080-5jsblrk7coj5cpmbosa06b3keiulsf43.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
